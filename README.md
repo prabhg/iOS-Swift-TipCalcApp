@@ -9,7 +9,7 @@ TipCalc is a tip calculator application for iOS.
 
 Submitted by: Prabhjeet Ghuman
 
-Time spent: 10 hours spent in total
+Time spent: 7 hours spent in total
 
 ## User Stories
 
@@ -42,16 +42,19 @@ As part of your pre-work submission, please reflect on the app and answer the fo
 
 **Question 1**: "What are your reactions to the iOS app development platform so far? How would you describe outlets and actions to another developer? Bonus: any idea how they are being implemented under the hood? (It might give you some ideas if you right-click on the Storyboard and click Open As->Source Code")
 
-**Answer:** [Enter your answer here in a paragraph or two].
+**Answer:** Coming from experience with languages like Java, Javascript and Python, I used to find syntax of Objective-C little cumbersome to understand, but swift removed that barrier for me. I have developer for Android in the past where views were specified in XML, so use of drag/drop on Storyboard was a breath of fresh air. Also liked the drag/drop ability to create outlets and actions. But I struggled so far to easily understand and provide constraints for auto-layouts. Also I find Apple uses really long and weird names for methods and properties, but XCode is powerful IDE and simplifies most of the annoyances I have experienced so far, albeit it is very strict about language and its syntax, so I spent lot of time trying to understand optionals and various error messages Xcode threw at me. I wanted to learn how to add sliding hamburger menus to app. Initially I tried to do it without using SWRevealViewController, but I did not understand what was happening while following tutorials. Later I used SWRevealViewController, but struggled to implement the functionality of "Done" button which will dismiss the settings view but not reinitialize the main tip-calculator view. Most of Stackoverflow answers are for Objective-C language, so finding my way around was harder, but not impossible. Overall, testing development of iOS apps so far has been a positive experience for me, and I am looking forward to delve deeper into Swift programming language.
+
+*Outlets and Actions*: Outlets are programmatic references to the views defined in Storyboard, and actions handle various events associated with those views. Outlets allow you to changes propeties of a view/control e.g. changing size/text/color/font etc of a label, value of a text field, visibility etc, whereas actions are functions which get triggered upon a certain event associated with the view and thereby allow you to run some code when that event occurs. For example, you may show/hide something when a button is clicked by registering an action to such event.
 
 Question 2: "Swift uses [Automatic Reference Counting](https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/AutomaticReferenceCounting.html#//apple_ref/doc/uid/TP40014097-CH20-ID49) (ARC), which is not a garbage collector, to manage memory. Can you explain how you can get a strong reference cycle for closures? (There's a section explaining this concept in the link, how would you summarize as simply as possible?)"
 
-**Answer:** [Enter your answer here in a paragraph or two].
+**Answer:** 
+A strong reference cycle can occur if you end up assigning a closure to a property of a class instance, and that closure captures "self" pointer to class instance. This will happen if closure's body references a property or method of class instance using "self" keyword. Now class intance has a strong reference to the closure, and closure has a strong reference to class instance (via self keyword). In order to break the strong reference, the closure body should provide a `closure capture list`, which is a comma separated list of all strong references to class instance or it's properties that closure will be capturing, but with `weak` or `unowned` keywords. This signal's swift that references being made inside closure are not strong, thereby breaking the strong reference cycle.
 
 
 ## License
 
-    Copyright [yyyy] [name of copyright owner]
+    Copyright [2017] [Prabhjeet Ghuman]
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
