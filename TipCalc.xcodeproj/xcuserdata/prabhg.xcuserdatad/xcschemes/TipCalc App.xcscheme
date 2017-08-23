@@ -17,7 +17,7 @@
                BlueprintIdentifier = "D1462EB81F4805EB007AD2F7"
                BuildableName = "TipCalc App.app"
                BlueprintName = "TipCalc App"
-               ReferencedContainer = "container:TipCalc App.xcodeproj">
+               ReferencedContainer = "container:TipCalc.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -35,7 +35,7 @@
             BlueprintIdentifier = "D1462EB81F4805EB007AD2F7"
             BuildableName = "TipCalc App.app"
             BlueprintName = "TipCalc App"
-            ReferencedContainer = "container:TipCalc App.xcodeproj">
+            ReferencedContainer = "container:TipCalc.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -58,7 +58,7 @@
             BlueprintIdentifier = "D1462EB81F4805EB007AD2F7"
             BuildableName = "TipCalc App.app"
             BlueprintName = "TipCalc App"
-            ReferencedContainer = "container:TipCalc App.xcodeproj">
+            ReferencedContainer = "container:TipCalc.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -77,7 +77,7 @@
             BlueprintIdentifier = "D1462EB81F4805EB007AD2F7"
             BuildableName = "TipCalc App.app"
             BlueprintName = "TipCalc App"
-            ReferencedContainer = "container:TipCalc App.xcodeproj">
+            ReferencedContainer = "container:TipCalc.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

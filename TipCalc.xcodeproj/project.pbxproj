@@ -112,7 +112,7 @@
 					};
 				};
 			};
-			buildConfigurationList = D1462EB41F4805EB007AD2F7 /* Build configuration list for PBXProject "TipCalc App" */;
+			buildConfigurationList = D1462EB41F4805EB007AD2F7 /* Build configuration list for PBXProject "TipCalc" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -306,7 +306,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D1462EB41F4805EB007AD2F7 /* Build configuration list for PBXProject "TipCalc App" */ = {
+		D1462EB41F4805EB007AD2F7 /* Build configuration list for PBXProject "TipCalc" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D1462EC91F4805EB007AD2F7 /* Debug */,

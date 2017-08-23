@@ -31,6 +31,8 @@ class ViewController: UIViewController {
     }
     
     override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+
         // update the values in the tip-selector.
         updateTipSelectorValues();
         
@@ -42,6 +44,16 @@ class ViewController: UIViewController {
         
         // the tip settings value may have changed. Re run the calculation
         updateCalculations()
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        
+        // check if the revealViewController menu is in "open" position, and close it if it is
+        if (self.revealViewController().frontViewPosition != FrontViewPosition.left) {
+            // close the menu
+            self.revealViewController().revealToggle(animated: true)
+        }
     }
 
     override func didReceiveMemoryWarning() {
