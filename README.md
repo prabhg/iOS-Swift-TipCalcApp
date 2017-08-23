@@ -27,6 +27,7 @@ The following **optional** features are implemented:
 The following **additional** features are implemented:
 
 - [x] Added hamburger menu (using SWRevealViewController). It was not necessary, but I wanted to learn how to build hamburger menus
+- [x] Added "Split between x" calculations for 2, 3 and 4 people
 
 ## Video Walkthrough 
 
