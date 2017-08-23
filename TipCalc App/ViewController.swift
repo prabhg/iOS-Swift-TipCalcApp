@@ -17,6 +17,10 @@ class ViewController: UIViewController {
     @IBOutlet weak var tipAmount: UILabel!
     @IBOutlet weak var totalAmount: UILabel!
     
+    @IBOutlet weak var split2: UILabel!
+    @IBOutlet weak var split3: UILabel!
+    @IBOutlet weak var split4: UILabel!
+    
     // array to store Float values of tip-percentages
     var tipPercentages: [Float] = [Float](repeating: 0.0, count: 3)
 
@@ -28,6 +32,9 @@ class ViewController: UIViewController {
         
         // setup the hamburger menu
         setupSlideMenu();
+        
+        // set focus to text field when app opens
+        amountField.becomeFirstResponder()
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -115,6 +122,10 @@ class ViewController: UIViewController {
         
         tipAmount.text = "$\(toDecimalPlaces(tipVal, 2))"
         totalAmount.text = "$\(toDecimalPlaces(totalVal, 2))"
+        
+        split2.text = "$\(toDecimalPlaces(totalVal/2, 2))"
+        split3.text = "$\(toDecimalPlaces(totalVal/3, 2))"
+        split4.text = "$\(toDecimalPlaces(totalVal/4, 2))"
     }
     
     // utility method to format a Float to set number of digits. Returns string

@@ -294,13 +294,67 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Split between 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FFz-mb-xXw">
+                                        <rect key="frame" x="14" y="147" width="119" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Split between 3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nJ8-j5-o6L">
+                                        <rect key="frame" x="14" y="199" width="119" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Split between 4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WeO-Nx-bEV">
+                                        <rect key="frame" x="14" y="251" width="133" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$0.00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xYw-EX-0vn">
+                                        <rect key="frame" x="144" y="147" width="174" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="174" id="pa8-Qq-vlU"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$0.00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mod-qe-iqc">
+                                        <rect key="frame" x="144" y="199" width="174" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="174" id="2qx-JM-I6W"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$0.00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yQX-9b-vzk">
+                                        <rect key="frame" x="144" y="251" width="174" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="174" id="9al-4h-0Zm"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="xYw-EX-0vn" secondAttribute="trailing" constant="5" id="3yJ-NA-OGe"/>
                                     <constraint firstAttribute="trailing" secondItem="5gU-rV-MP4" secondAttribute="trailing" constant="5" id="6cS-th-d1f"/>
+                                    <constraint firstAttribute="trailing" secondItem="yQX-9b-vzk" secondAttribute="trailing" constant="5" id="F4Z-Jy-OkK"/>
                                     <constraint firstItem="MWU-Sh-TsK" firstAttribute="top" secondItem="oIx-35-0ky" secondAttribute="top" constant="25" id="GUa-YB-1wn"/>
+                                    <constraint firstAttribute="trailing" secondItem="mod-qe-iqc" secondAttribute="trailing" constant="5" id="JMj-Um-6Zp"/>
+                                    <constraint firstItem="xYw-EX-0vn" firstAttribute="top" secondItem="5gU-rV-MP4" secondAttribute="bottom" constant="29" id="R10-As-zKx"/>
+                                    <constraint firstItem="mod-qe-iqc" firstAttribute="top" secondItem="xYw-EX-0vn" secondAttribute="bottom" constant="31" id="Wub-BJ-LQy"/>
                                     <constraint firstItem="5gU-rV-MP4" firstAttribute="top" secondItem="MWU-Sh-TsK" secondAttribute="bottom" constant="20" id="kWJ-62-7h0"/>
                                     <constraint firstAttribute="trailing" secondItem="MWU-Sh-TsK" secondAttribute="trailing" constant="5" id="oVW-iM-MSH"/>
+                                    <constraint firstItem="yQX-9b-vzk" firstAttribute="top" secondItem="mod-qe-iqc" secondAttribute="bottom" constant="31" id="ohu-Rp-TQa"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uOj-gG-LNA" userLabel="Divider View">
@@ -344,6 +398,9 @@
                     <connections>
                         <outlet property="amountField" destination="rOH-eo-jgN" id="l7h-Ji-ux9"/>
                         <outlet property="menuButton" destination="Eyk-yp-JjC" id="Lsq-sr-VFe"/>
+                        <outlet property="split2" destination="xYw-EX-0vn" id="NyP-Yc-cPw"/>
+                        <outlet property="split3" destination="mod-qe-iqc" id="ajC-uI-Sdj"/>
+                        <outlet property="split4" destination="yQX-9b-vzk" id="OIg-o4-dyd"/>
                         <outlet property="tipAmount" destination="MWU-Sh-TsK" id="7uB-3h-wqo"/>
                         <outlet property="tipSelector" destination="E03-TE-kWD" id="eFp-Te-yuK"/>
                         <outlet property="totalAmount" destination="5gU-rV-MP4" id="Csk-y1-trF"/>
